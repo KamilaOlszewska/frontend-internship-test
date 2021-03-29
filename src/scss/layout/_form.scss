@@ -1,0 +1,71 @@
+.form{
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 5px 0 5px 5px;
+  position: relative;
+  padding: 2rem;
+  //overflow: hidden;
+}
+.form-input{
+  margin-bottom: 0.5rem;
+  border: 2px solid #707070;
+  padding: 1rem 1rem;
+}
+.form-checkbox-wrapper{
+  position: relative;
+  padding: 0.5rem 1rem 1.5rem 1rem;
+}
+.form-input-checkbox{
+  margin-bottom: 1rem;
+  position: absolute;
+  left: -2000px;
+}
+.fa-check{
+  position: absolute;
+  left: 1px;
+  top:11px;
+  color: transparent;
+  z-index: 1;
+}
+.form-input-label{
+  padding-left: 0.5rem;
+  &:before{
+    content: "";
+    width: 14px;
+    height: 14px;
+    display: block;
+    border: 2px solid #707070;
+    position: absolute;
+    top: 10px;
+    left:0;
+    background-color: #ffffff;
+  }
+}
+.form-header{
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom:1rem;
+  margin: 0;
+}
+.form-button{
+  background-color: black;
+  color: white;
+  border: 0;
+  padding: 1rem 0;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  &:hover{
+    background-color: $secondary-color;
+  }
+}
+.fa-times-circle{
+  position: absolute;
+  right: -5px;
+  top: -5px;
+}
+.hidden{
+  display: none;
+}
